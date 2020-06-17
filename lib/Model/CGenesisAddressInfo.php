@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanoexplorer\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanoexplorer\ObjectSerializer;
 
 /**
  * CGenesisAddressInfo Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -58,7 +58,7 @@ class CGenesisAddressInfo implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'cgai_cardano_address' => 'string',
-        'cgai_genesis_amount' => '\OpenAPI\Client\Model\InlineResponse200RightCoin',
+        'cgai_genesis_amount' => '\melmccann\cardanoexplorer\Model\InlineResponse200RightCoin',
         'cgai_is_redeemed' => 'bool'
     ];
 
@@ -252,7 +252,7 @@ class CGenesisAddressInfo implements ModelInterface, ArrayAccess
     /**
      * Gets cgai_genesis_amount
      *
-     * @return \OpenAPI\Client\Model\InlineResponse200RightCoin
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin
      */
     public function getCgaiGenesisAmount()
     {
@@ -262,7 +262,7 @@ class CGenesisAddressInfo implements ModelInterface, ArrayAccess
     /**
      * Sets cgai_genesis_amount
      *
-     * @param \OpenAPI\Client\Model\InlineResponse200RightCoin $cgai_genesis_amount cgai_genesis_amount
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin $cgai_genesis_amount cgai_genesis_amount
      *
      * @return $this
      */

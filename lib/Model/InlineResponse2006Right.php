@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanoexplorer\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanoexplorer\ObjectSerializer;
 
 /**
  * InlineResponse2006Right Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -65,11 +65,11 @@ class InlineResponse2006Right implements ModelInterface, ArrayAccess
         'cts_block_slot' => 'int',
         'cts_block_hash' => 'string',
         'cts_relayed_by' => 'string',
-        'cts_total_input' => '\OpenAPI\Client\Model\InlineResponse200RightCoin',
-        'cts_total_output' => '\OpenAPI\Client\Model\InlineResponse200RightCoin',
-        'cts_fees' => '\OpenAPI\Client\Model\InlineResponse200RightCoin',
-        'cts_inputs' => '\OpenAPI\Client\Model\InlineResponse2004CtbInputs[]',
-        'cts_outputs' => '\OpenAPI\Client\Model\InlineResponse2004CtbInputs[]'
+        'cts_total_input' => '\melmccann\cardanoexplorer\Model\InlineResponse200RightCoin',
+        'cts_total_output' => '\melmccann\cardanoexplorer\Model\InlineResponse200RightCoin',
+        'cts_fees' => '\melmccann\cardanoexplorer\Model\InlineResponse200RightCoin',
+        'cts_inputs' => '\melmccann\cardanoexplorer\Model\InlineResponse2004CtbInputs[]',
+        'cts_outputs' => '\melmccann\cardanoexplorer\Model\InlineResponse2004CtbInputs[]'
     ];
 
     /**
@@ -545,7 +545,7 @@ class InlineResponse2006Right implements ModelInterface, ArrayAccess
     /**
      * Gets cts_total_input
      *
-     * @return \OpenAPI\Client\Model\InlineResponse200RightCoin
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin
      */
     public function getCtsTotalInput()
     {
@@ -555,7 +555,7 @@ class InlineResponse2006Right implements ModelInterface, ArrayAccess
     /**
      * Sets cts_total_input
      *
-     * @param \OpenAPI\Client\Model\InlineResponse200RightCoin $cts_total_input cts_total_input
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin $cts_total_input cts_total_input
      *
      * @return $this
      */
@@ -569,7 +569,7 @@ class InlineResponse2006Right implements ModelInterface, ArrayAccess
     /**
      * Gets cts_total_output
      *
-     * @return \OpenAPI\Client\Model\InlineResponse200RightCoin
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin
      */
     public function getCtsTotalOutput()
     {
@@ -579,7 +579,7 @@ class InlineResponse2006Right implements ModelInterface, ArrayAccess
     /**
      * Sets cts_total_output
      *
-     * @param \OpenAPI\Client\Model\InlineResponse200RightCoin $cts_total_output cts_total_output
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin $cts_total_output cts_total_output
      *
      * @return $this
      */
@@ -593,7 +593,7 @@ class InlineResponse2006Right implements ModelInterface, ArrayAccess
     /**
      * Gets cts_fees
      *
-     * @return \OpenAPI\Client\Model\InlineResponse200RightCoin
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin
      */
     public function getCtsFees()
     {
@@ -603,7 +603,7 @@ class InlineResponse2006Right implements ModelInterface, ArrayAccess
     /**
      * Sets cts_fees
      *
-     * @param \OpenAPI\Client\Model\InlineResponse200RightCoin $cts_fees cts_fees
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin $cts_fees cts_fees
      *
      * @return $this
      */
@@ -617,7 +617,7 @@ class InlineResponse2006Right implements ModelInterface, ArrayAccess
     /**
      * Gets cts_inputs
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2004CtbInputs[]
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse2004CtbInputs[]
      */
     public function getCtsInputs()
     {
@@ -627,7 +627,7 @@ class InlineResponse2006Right implements ModelInterface, ArrayAccess
     /**
      * Sets cts_inputs
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2004CtbInputs[] $cts_inputs cts_inputs
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse2004CtbInputs[] $cts_inputs cts_inputs
      *
      * @return $this
      */
@@ -641,7 +641,7 @@ class InlineResponse2006Right implements ModelInterface, ArrayAccess
     /**
      * Gets cts_outputs
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2004CtbInputs[]
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse2004CtbInputs[]
      */
     public function getCtsOutputs()
     {
@@ -651,7 +651,7 @@ class InlineResponse2006Right implements ModelInterface, ArrayAccess
     /**
      * Sets cts_outputs
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2004CtbInputs[] $cts_outputs cts_outputs
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse2004CtbInputs[] $cts_outputs cts_outputs
      *
      * @return $this
      */

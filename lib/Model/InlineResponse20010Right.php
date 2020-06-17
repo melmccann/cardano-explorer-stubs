@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanoexplorer\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanoexplorer\ObjectSerializer;
 
 /**
  * InlineResponse20010Right Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -60,8 +60,8 @@ class InlineResponse20010Right implements ModelInterface, ArrayAccess
         'cgs_num_total' => 'int',
         'cgs_num_redeemed' => 'int',
         'cgs_num_not_redeemed' => 'int',
-        'cgs_redeemed_amount_total' => '\OpenAPI\Client\Model\InlineResponse200RightCoin',
-        'cgs_non_redeemed_amount_total' => '\OpenAPI\Client\Model\InlineResponse200RightCoin'
+        'cgs_redeemed_amount_total' => '\melmccann\cardanoexplorer\Model\InlineResponse200RightCoin',
+        'cgs_non_redeemed_amount_total' => '\melmccann\cardanoexplorer\Model\InlineResponse200RightCoin'
     ];
 
     /**
@@ -345,7 +345,7 @@ class InlineResponse20010Right implements ModelInterface, ArrayAccess
     /**
      * Gets cgs_redeemed_amount_total
      *
-     * @return \OpenAPI\Client\Model\InlineResponse200RightCoin
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin
      */
     public function getCgsRedeemedAmountTotal()
     {
@@ -355,7 +355,7 @@ class InlineResponse20010Right implements ModelInterface, ArrayAccess
     /**
      * Sets cgs_redeemed_amount_total
      *
-     * @param \OpenAPI\Client\Model\InlineResponse200RightCoin $cgs_redeemed_amount_total cgs_redeemed_amount_total
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin $cgs_redeemed_amount_total cgs_redeemed_amount_total
      *
      * @return $this
      */
@@ -369,7 +369,7 @@ class InlineResponse20010Right implements ModelInterface, ArrayAccess
     /**
      * Gets cgs_non_redeemed_amount_total
      *
-     * @return \OpenAPI\Client\Model\InlineResponse200RightCoin
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin
      */
     public function getCgsNonRedeemedAmountTotal()
     {
@@ -379,7 +379,7 @@ class InlineResponse20010Right implements ModelInterface, ArrayAccess
     /**
      * Sets cgs_non_redeemed_amount_total
      *
-     * @param \OpenAPI\Client\Model\InlineResponse200RightCoin $cgs_non_redeemed_amount_total cgs_non_redeemed_amount_total
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin $cgs_non_redeemed_amount_total cgs_non_redeemed_amount_total
      *
      * @return $this
      */

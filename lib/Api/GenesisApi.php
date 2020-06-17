@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace melmccann\cardanoexplorer\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use melmccann\cardanoexplorer\ApiException;
+use melmccann\cardanoexplorer\Configuration;
+use melmccann\cardanoexplorer\HeaderSelector;
+use melmccann\cardanoexplorer\ObjectSerializer;
 
 /**
  * GenesisApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -124,9 +124,9 @@ class GenesisApi
      * @param  float $page_size page_size (required)
      * @param  string $filter filter (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanoexplorer\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse20011
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse20011
      */
     public function genesisAddressInfo($page, $page_size, $filter = null)
     {
@@ -143,9 +143,9 @@ class GenesisApi
      * @param  float $page_size (required)
      * @param  string $filter (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanoexplorer\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse20011, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \melmccann\cardanoexplorer\Model\InlineResponse20011, HTTP status code, HTTP response headers (array of strings)
      */
     public function genesisAddressInfoWithHttpInfo($page, $page_size, $filter = null)
     {
@@ -182,20 +182,20 @@ class GenesisApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\InlineResponse20011' === '\SplFileObject') {
+                    if ('\melmccann\cardanoexplorer\Model\InlineResponse20011' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse20011', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanoexplorer\Model\InlineResponse20011', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\InlineResponse20011';
+            $returnType = '\melmccann\cardanoexplorer\Model\InlineResponse20011';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -214,7 +214,7 @@ class GenesisApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse20011',
+                        '\melmccann\cardanoexplorer\Model\InlineResponse20011',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -260,7 +260,7 @@ class GenesisApi
      */
     public function genesisAddressInfoAsyncWithHttpInfo($page, $page_size, $filter = null)
     {
-        $returnType = '\OpenAPI\Client\Model\InlineResponse20011';
+        $returnType = '\melmccann\cardanoexplorer\Model\InlineResponse20011';
         $request = $this->genesisAddressInfoRequest($page, $page_size, $filter);
 
         return $this->client
@@ -433,9 +433,9 @@ class GenesisApi
      * @param  float $page_size page_size (required)
      * @param  string $filter filter (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanoexplorer\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse2002
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse2002
      */
     public function genesisPagesTotal($page_size, $filter = null)
     {
@@ -451,9 +451,9 @@ class GenesisApi
      * @param  float $page_size (required)
      * @param  string $filter (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanoexplorer\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse2002, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \melmccann\cardanoexplorer\Model\InlineResponse2002, HTTP status code, HTTP response headers (array of strings)
      */
     public function genesisPagesTotalWithHttpInfo($page_size, $filter = null)
     {
@@ -490,20 +490,20 @@ class GenesisApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\InlineResponse2002' === '\SplFileObject') {
+                    if ('\melmccann\cardanoexplorer\Model\InlineResponse2002' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse2002', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanoexplorer\Model\InlineResponse2002', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\InlineResponse2002';
+            $returnType = '\melmccann\cardanoexplorer\Model\InlineResponse2002';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -522,7 +522,7 @@ class GenesisApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse2002',
+                        '\melmccann\cardanoexplorer\Model\InlineResponse2002',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -566,7 +566,7 @@ class GenesisApi
      */
     public function genesisPagesTotalAsyncWithHttpInfo($page_size, $filter = null)
     {
-        $returnType = '\OpenAPI\Client\Model\InlineResponse2002';
+        $returnType = '\melmccann\cardanoexplorer\Model\InlineResponse2002';
         $request = $this->genesisPagesTotalRequest($page_size, $filter);
 
         return $this->client
@@ -719,9 +719,9 @@ class GenesisApi
      * get summary
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanoexplorer\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse20010
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse20010
      */
     public function genesisSummary()
     {
@@ -735,9 +735,9 @@ class GenesisApi
      * get summary
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanoexplorer\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse20010, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \melmccann\cardanoexplorer\Model\InlineResponse20010, HTTP status code, HTTP response headers (array of strings)
      */
     public function genesisSummaryWithHttpInfo()
     {
@@ -774,20 +774,20 @@ class GenesisApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\InlineResponse20010' === '\SplFileObject') {
+                    if ('\melmccann\cardanoexplorer\Model\InlineResponse20010' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse20010', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanoexplorer\Model\InlineResponse20010', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\InlineResponse20010';
+            $returnType = '\melmccann\cardanoexplorer\Model\InlineResponse20010';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -806,7 +806,7 @@ class GenesisApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse20010',
+                        '\melmccann\cardanoexplorer\Model\InlineResponse20010',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -846,7 +846,7 @@ class GenesisApi
      */
     public function genesisSummaryAsyncWithHttpInfo()
     {
-        $returnType = '\OpenAPI\Client\Model\InlineResponse20010';
+        $returnType = '\melmccann\cardanoexplorer\Model\InlineResponse20010';
         $request = $this->genesisSummaryRequest();
 
         return $this->client
@@ -973,9 +973,9 @@ class GenesisApi
      * ada supply
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanoexplorer\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse20012
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse20012
      */
     public function totalAda()
     {
@@ -989,9 +989,9 @@ class GenesisApi
      * ada supply
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanoexplorer\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse20012, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \melmccann\cardanoexplorer\Model\InlineResponse20012, HTTP status code, HTTP response headers (array of strings)
      */
     public function totalAdaWithHttpInfo()
     {
@@ -1028,20 +1028,20 @@ class GenesisApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\InlineResponse20012' === '\SplFileObject') {
+                    if ('\melmccann\cardanoexplorer\Model\InlineResponse20012' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse20012', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanoexplorer\Model\InlineResponse20012', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\InlineResponse20012';
+            $returnType = '\melmccann\cardanoexplorer\Model\InlineResponse20012';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1060,7 +1060,7 @@ class GenesisApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse20012',
+                        '\melmccann\cardanoexplorer\Model\InlineResponse20012',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1100,7 +1100,7 @@ class GenesisApi
      */
     public function totalAdaAsyncWithHttpInfo()
     {
-        $returnType = '\OpenAPI\Client\Model\InlineResponse20012';
+        $returnType = '\melmccann\cardanoexplorer\Model\InlineResponse20012';
         $request = $this->totalAdaRequest();
 
         return $this->client

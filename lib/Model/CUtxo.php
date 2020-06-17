@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanoexplorer\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanoexplorer\ObjectSerializer;
 
 /**
  * CUtxo Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -60,7 +60,7 @@ class CUtxo implements ModelInterface, ArrayAccess
         'cu_id' => 'object',
         'cu_out_index' => 'int',
         'cu_address' => 'string',
-        'cu_coins' => '\OpenAPI\Client\Model\InlineResponse200RightCoin'
+        'cu_coins' => '\melmccann\cardanoexplorer\Model\InlineResponse200RightCoin'
     ];
 
     /**
@@ -318,7 +318,7 @@ class CUtxo implements ModelInterface, ArrayAccess
     /**
      * Gets cu_coins
      *
-     * @return \OpenAPI\Client\Model\InlineResponse200RightCoin
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin
      */
     public function getCuCoins()
     {
@@ -328,7 +328,7 @@ class CUtxo implements ModelInterface, ArrayAccess
     /**
      * Sets cu_coins
      *
-     * @param \OpenAPI\Client\Model\InlineResponse200RightCoin $cu_coins cu_coins
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin $cu_coins cu_coins
      *
      * @return $this
      */

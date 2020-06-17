@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanoexplorer\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanoexplorer\ObjectSerializer;
 
 /**
  * CBlockSummary Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -57,7 +57,7 @@ class CBlockSummary implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'cbs_entry' => '\OpenAPI\Client\Model\InlineResponse2003RightCbsEntry',
+        'cbs_entry' => '\melmccann\cardanoexplorer\Model\InlineResponse2003RightCbsEntry',
         'cbs_prev_hash' => 'string',
         'cbs_next_hash' => 'string',
         'cbs_merkle_root' => 'string'
@@ -270,7 +270,7 @@ class CBlockSummary implements ModelInterface, ArrayAccess
     /**
      * Gets cbs_entry
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2003RightCbsEntry
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse2003RightCbsEntry
      */
     public function getCbsEntry()
     {
@@ -280,7 +280,7 @@ class CBlockSummary implements ModelInterface, ArrayAccess
     /**
      * Sets cbs_entry
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2003RightCbsEntry $cbs_entry cbs_entry
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse2003RightCbsEntry $cbs_entry cbs_entry
      *
      * @return $this
      */

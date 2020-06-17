@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanoexplorer\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanoexplorer\ObjectSerializer;
 
 /**
  * InlineResponse20011 Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -57,7 +57,7 @@ class InlineResponse20011 implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'right' => '\OpenAPI\Client\Model\InlineResponse20011Right'
+        'right' => '\melmccann\cardanoexplorer\Model\InlineResponse20011Right'
     ];
 
     /**
@@ -210,7 +210,7 @@ class InlineResponse20011 implements ModelInterface, ArrayAccess
     /**
      * Gets right
      *
-     * @return \OpenAPI\Client\Model\InlineResponse20011Right
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse20011Right
      */
     public function getRight()
     {
@@ -220,7 +220,7 @@ class InlineResponse20011 implements ModelInterface, ArrayAccess
     /**
      * Sets right
      *
-     * @param \OpenAPI\Client\Model\InlineResponse20011Right $right right
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse20011Right $right right
      *
      * @return $this
      */

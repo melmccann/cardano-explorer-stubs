@@ -1,4 +1,4 @@
-# OpenAPI\Client\EpochsApi
+# melmccann\cardanoexplorer\EpochsApi
 
 All URIs are relative to *https://localhost*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 ## epochPages
 
-> \OpenAPI\Client\Model\InlineResponse2001 epochPages($epoch, $page)
+> \melmccann\cardanoexplorer\Model\InlineResponse2001 epochPages($epoch, $page)
 
 get epoch
 
@@ -24,7 +24,7 @@ Get epoch pages, all the paged slots in the epoch.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\EpochsApi(
+$apiInstance = new melmccann\cardanoexplorer\Api\EpochsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
+[**\melmccann\cardanoexplorer\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 
 ## epochSlots
 
-> \OpenAPI\Client\Model\InlineResponse2009 epochSlots($epoch, $slot)
+> \melmccann\cardanoexplorer\Model\InlineResponse2009 epochSlots($epoch, $slot)
 
 get slot
 
@@ -82,7 +82,7 @@ Get the slot information in an epoch.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\EpochsApi(
+$apiInstance = new melmccann\cardanoexplorer\Api\EpochsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2009**](../Model/InlineResponse2009.md)
+[**\melmccann\cardanoexplorer\Model\InlineResponse2009**](../Model/InlineResponse2009.md)
 
 ### Authorization
 

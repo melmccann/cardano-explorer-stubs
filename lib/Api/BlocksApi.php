@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace melmccann\cardanoexplorer\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use melmccann\cardanoexplorer\ApiException;
+use melmccann\cardanoexplorer\Configuration;
+use melmccann\cardanoexplorer\HeaderSelector;
+use melmccann\cardanoexplorer\ObjectSerializer;
 
 /**
  * BlocksApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -123,9 +123,9 @@ class BlocksApi
      * @param  float $page page (required)
      * @param  float $page_size page_size (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanoexplorer\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse2001
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse2001
      */
     public function blocksPages($page, $page_size)
     {
@@ -141,9 +141,9 @@ class BlocksApi
      * @param  float $page (required)
      * @param  float $page_size (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanoexplorer\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse2001, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \melmccann\cardanoexplorer\Model\InlineResponse2001, HTTP status code, HTTP response headers (array of strings)
      */
     public function blocksPagesWithHttpInfo($page, $page_size)
     {
@@ -180,20 +180,20 @@ class BlocksApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\InlineResponse2001' === '\SplFileObject') {
+                    if ('\melmccann\cardanoexplorer\Model\InlineResponse2001' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse2001', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanoexplorer\Model\InlineResponse2001', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\InlineResponse2001';
+            $returnType = '\melmccann\cardanoexplorer\Model\InlineResponse2001';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -212,7 +212,7 @@ class BlocksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse2001',
+                        '\melmccann\cardanoexplorer\Model\InlineResponse2001',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -256,7 +256,7 @@ class BlocksApi
      */
     public function blocksPagesAsyncWithHttpInfo($page, $page_size)
     {
-        $returnType = '\OpenAPI\Client\Model\InlineResponse2001';
+        $returnType = '\melmccann\cardanoexplorer\Model\InlineResponse2001';
         $request = $this->blocksPagesRequest($page, $page_size);
 
         return $this->client
@@ -420,9 +420,9 @@ class BlocksApi
      *
      * @param  float $page_size page_size (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanoexplorer\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse2002
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse2002
      */
     public function blocksPagesTotal($page_size)
     {
@@ -437,9 +437,9 @@ class BlocksApi
      *
      * @param  float $page_size (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanoexplorer\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse2002, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \melmccann\cardanoexplorer\Model\InlineResponse2002, HTTP status code, HTTP response headers (array of strings)
      */
     public function blocksPagesTotalWithHttpInfo($page_size)
     {
@@ -476,20 +476,20 @@ class BlocksApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\InlineResponse2002' === '\SplFileObject') {
+                    if ('\melmccann\cardanoexplorer\Model\InlineResponse2002' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse2002', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanoexplorer\Model\InlineResponse2002', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\InlineResponse2002';
+            $returnType = '\melmccann\cardanoexplorer\Model\InlineResponse2002';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -508,7 +508,7 @@ class BlocksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse2002',
+                        '\melmccann\cardanoexplorer\Model\InlineResponse2002',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -550,7 +550,7 @@ class BlocksApi
      */
     public function blocksPagesTotalAsyncWithHttpInfo($page_size)
     {
-        $returnType = '\OpenAPI\Client\Model\InlineResponse2002';
+        $returnType = '\melmccann\cardanoexplorer\Model\InlineResponse2002';
         $request = $this->blocksPagesTotalRequest($page_size);
 
         return $this->client
@@ -696,9 +696,9 @@ class BlocksApi
      *
      * @param  string $block_hash block_hash (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanoexplorer\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse2003
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse2003
      */
     public function blocksSummary($block_hash)
     {
@@ -713,9 +713,9 @@ class BlocksApi
      *
      * @param  string $block_hash (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanoexplorer\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse2003, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \melmccann\cardanoexplorer\Model\InlineResponse2003, HTTP status code, HTTP response headers (array of strings)
      */
     public function blocksSummaryWithHttpInfo($block_hash)
     {
@@ -752,20 +752,20 @@ class BlocksApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\InlineResponse2003' === '\SplFileObject') {
+                    if ('\melmccann\cardanoexplorer\Model\InlineResponse2003' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse2003', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanoexplorer\Model\InlineResponse2003', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\InlineResponse2003';
+            $returnType = '\melmccann\cardanoexplorer\Model\InlineResponse2003';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -784,7 +784,7 @@ class BlocksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse2003',
+                        '\melmccann\cardanoexplorer\Model\InlineResponse2003',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -826,7 +826,7 @@ class BlocksApi
      */
     public function blocksSummaryAsyncWithHttpInfo($block_hash)
     {
-        $returnType = '\OpenAPI\Client\Model\InlineResponse2003';
+        $returnType = '\melmccann\cardanoexplorer\Model\InlineResponse2003';
         $request = $this->blocksSummaryRequest($block_hash);
 
         return $this->client
@@ -981,9 +981,9 @@ class BlocksApi
      * @param  int $limit limit (optional)
      * @param  int $offset offset (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanoexplorer\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InlineResponse2004
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse2004
      */
     public function blocksTxs($block_hash, $limit = null, $offset = null)
     {
@@ -1000,9 +1000,9 @@ class BlocksApi
      * @param  int $limit (optional)
      * @param  int $offset (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \melmccann\cardanoexplorer\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InlineResponse2004, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \melmccann\cardanoexplorer\Model\InlineResponse2004, HTTP status code, HTTP response headers (array of strings)
      */
     public function blocksTxsWithHttpInfo($block_hash, $limit = null, $offset = null)
     {
@@ -1039,20 +1039,20 @@ class BlocksApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\InlineResponse2004' === '\SplFileObject') {
+                    if ('\melmccann\cardanoexplorer\Model\InlineResponse2004' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InlineResponse2004', []),
+                        ObjectSerializer::deserialize($content, '\melmccann\cardanoexplorer\Model\InlineResponse2004', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\InlineResponse2004';
+            $returnType = '\melmccann\cardanoexplorer\Model\InlineResponse2004';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1071,7 +1071,7 @@ class BlocksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InlineResponse2004',
+                        '\melmccann\cardanoexplorer\Model\InlineResponse2004',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1117,7 +1117,7 @@ class BlocksApi
      */
     public function blocksTxsAsyncWithHttpInfo($block_hash, $limit = null, $offset = null)
     {
-        $returnType = '\OpenAPI\Client\Model\InlineResponse2004';
+        $returnType = '\melmccann\cardanoexplorer\Model\InlineResponse2004';
         $request = $this->blocksTxsRequest($block_hash, $limit, $offset);
 
         return $this->client

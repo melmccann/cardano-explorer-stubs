@@ -1,4 +1,4 @@
-# OpenAPI\Client\TransactionsApi
+# melmccann\cardanoexplorer\TransactionsApi
 
 All URIs are relative to *https://localhost*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 ## statsTxs
 
-> \OpenAPI\Client\Model\InlineResponse2007 statsTxs($page)
+> \melmccann\cardanoexplorer\Model\InlineResponse2007 statsTxs($page)
 
 txs stats
 
@@ -23,7 +23,7 @@ txs stats
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\TransactionsApi(
+$apiInstance = new melmccann\cardanoexplorer\Api\TransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2007**](../Model/InlineResponse2007.md)
+[**\melmccann\cardanoexplorer\Model\InlineResponse2007**](../Model/InlineResponse2007.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ No authorization required
 
 ## txsLast
 
-> \OpenAPI\Client\Model\InlineResponse2005 txsLast()
+> \melmccann\cardanoexplorer\Model\InlineResponse2005 txsLast()
 
 get last N
 
@@ -79,7 +79,7 @@ Get information about the N latest transactions.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\TransactionsApi(
+$apiInstance = new melmccann\cardanoexplorer\Api\TransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -100,7 +100,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2005**](../Model/InlineResponse2005.md)
+[**\melmccann\cardanoexplorer\Model\InlineResponse2005**](../Model/InlineResponse2005.md)
 
 ### Authorization
 
@@ -118,7 +118,7 @@ No authorization required
 
 ## txsSummary
 
-> \OpenAPI\Client\Model\InlineResponse2006 txsSummary($tx_id)
+> \melmccann\cardanoexplorer\Model\InlineResponse2006 txsSummary($tx_id)
 
 get summary
 
@@ -131,7 +131,7 @@ Get summary information about a transaction
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\TransactionsApi(
+$apiInstance = new melmccann\cardanoexplorer\Api\TransactionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -156,7 +156,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2006**](../Model/InlineResponse2006.md)
+[**\melmccann\cardanoexplorer\Model\InlineResponse2006**](../Model/InlineResponse2006.md)
 
 ### Authorization
 

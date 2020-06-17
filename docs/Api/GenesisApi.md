@@ -1,4 +1,4 @@
-# OpenAPI\Client\GenesisApi
+# melmccann\cardanoexplorer\GenesisApi
 
 All URIs are relative to *https://localhost*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 ## genesisAddressInfo
 
-> \OpenAPI\Client\Model\InlineResponse20011 genesisAddressInfo($page, $page_size, $filter)
+> \melmccann\cardanoexplorer\Model\InlineResponse20011 genesisAddressInfo($page, $page_size, $filter)
 
 get address info
 
@@ -24,7 +24,7 @@ get address info
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\GenesisApi(
+$apiInstance = new melmccann\cardanoexplorer\Api\GenesisApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse20011**](../Model/InlineResponse20011.md)
+[**\melmccann\cardanoexplorer\Model\InlineResponse20011**](../Model/InlineResponse20011.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 
 ## genesisPagesTotal
 
-> \OpenAPI\Client\Model\InlineResponse2002 genesisPagesTotal($page_size, $filter)
+> \melmccann\cardanoexplorer\Model\InlineResponse2002 genesisPagesTotal($page_size, $filter)
 
 get total pages
 
@@ -82,7 +82,7 @@ get total pages
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\GenesisApi(
+$apiInstance = new melmccann\cardanoexplorer\Api\GenesisApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
+[**\melmccann\cardanoexplorer\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
 
 ### Authorization
 
@@ -127,7 +127,7 @@ No authorization required
 
 ## genesisSummary
 
-> \OpenAPI\Client\Model\InlineResponse20010 genesisSummary()
+> \melmccann\cardanoexplorer\Model\InlineResponse20010 genesisSummary()
 
 get summary
 
@@ -140,7 +140,7 @@ Get information about the genesis block.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\GenesisApi(
+$apiInstance = new melmccann\cardanoexplorer\Api\GenesisApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -161,7 +161,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse20010**](../Model/InlineResponse20010.md)
+[**\melmccann\cardanoexplorer\Model\InlineResponse20010**](../Model/InlineResponse20010.md)
 
 ### Authorization
 
@@ -179,7 +179,7 @@ No authorization required
 
 ## totalAda
 
-> \OpenAPI\Client\Model\InlineResponse20012 totalAda()
+> \melmccann\cardanoexplorer\Model\InlineResponse20012 totalAda()
 
 ada supply
 
@@ -192,7 +192,7 @@ Get the total supply of Ada.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\GenesisApi(
+$apiInstance = new melmccann\cardanoexplorer\Api\GenesisApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -213,7 +213,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse20012**](../Model/InlineResponse20012.md)
+[**\melmccann\cardanoexplorer\Model\InlineResponse20012**](../Model/InlineResponse20012.md)
 
 ### Authorization
 

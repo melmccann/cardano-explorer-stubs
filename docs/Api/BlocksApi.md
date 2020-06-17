@@ -1,4 +1,4 @@
-# OpenAPI\Client\BlocksApi
+# melmccann\cardanoexplorer\BlocksApi
 
 All URIs are relative to *https://localhost*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 ## blocksPages
 
-> \OpenAPI\Client\Model\InlineResponse2001 blocksPages($page, $page_size)
+> \melmccann\cardanoexplorer\Model\InlineResponse2001 blocksPages($page, $page_size)
 
 list blocks
 
@@ -26,7 +26,7 @@ Get the list of blocks, contained in pages.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\BlocksApi(
+$apiInstance = new melmccann\cardanoexplorer\Api\BlocksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
+[**\melmccann\cardanoexplorer\Model\InlineResponse2001**](../Model/InlineResponse2001.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 
 ## blocksPagesTotal
 
-> \OpenAPI\Client\Model\InlineResponse2002 blocksPagesTotal($page_size)
+> \melmccann\cardanoexplorer\Model\InlineResponse2002 blocksPagesTotal($page_size)
 
 get total pages
 
@@ -84,7 +84,7 @@ Get the list of total pages.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\BlocksApi(
+$apiInstance = new melmccann\cardanoexplorer\Api\BlocksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
+[**\melmccann\cardanoexplorer\Model\InlineResponse2002**](../Model/InlineResponse2002.md)
 
 ### Authorization
 
@@ -127,7 +127,7 @@ No authorization required
 
 ## blocksSummary
 
-> \OpenAPI\Client\Model\InlineResponse2003 blocksSummary($block_hash)
+> \melmccann\cardanoexplorer\Model\InlineResponse2003 blocksSummary($block_hash)
 
 get summary
 
@@ -140,7 +140,7 @@ Get block's summary information.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\BlocksApi(
+$apiInstance = new melmccann\cardanoexplorer\Api\BlocksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2003**](../Model/InlineResponse2003.md)
+[**\melmccann\cardanoexplorer\Model\InlineResponse2003**](../Model/InlineResponse2003.md)
 
 ### Authorization
 
@@ -183,7 +183,7 @@ No authorization required
 
 ## blocksTxs
 
-> \OpenAPI\Client\Model\InlineResponse2004 blocksTxs($block_hash, $limit, $offset)
+> \melmccann\cardanoexplorer\Model\InlineResponse2004 blocksTxs($block_hash, $limit, $offset)
 
 list transactions
 
@@ -196,7 +196,7 @@ Get brief information about transactions.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\BlocksApi(
+$apiInstance = new melmccann\cardanoexplorer\Api\BlocksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -225,7 +225,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2004**](../Model/InlineResponse2004.md)
+[**\melmccann\cardanoexplorer\Model\InlineResponse2004**](../Model/InlineResponse2004.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanoexplorer\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanoexplorer\ObjectSerializer;
 
 /**
  * CTxBrief Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -59,11 +59,11 @@ class CTxBrief implements ModelInterface, ArrayAccess
     protected static $openAPITypes = [
         'ctb_id' => 'string',
         'ctb_time_issued' => 'int',
-        'ctb_inputs' => '\OpenAPI\Client\Model\InlineResponse2004CtbInputs[]',
-        'ctb_outputs' => '\OpenAPI\Client\Model\InlineResponse2004CtbInputs[]',
-        'ctb_input_sum' => '\OpenAPI\Client\Model\InlineResponse200RightCoin',
-        'ctb_output_sum' => '\OpenAPI\Client\Model\InlineResponse200RightCoin',
-        'ctb_fees' => '\OpenAPI\Client\Model\InlineResponse200RightCoin'
+        'ctb_inputs' => '\melmccann\cardanoexplorer\Model\InlineResponse2004CtbInputs[]',
+        'ctb_outputs' => '\melmccann\cardanoexplorer\Model\InlineResponse2004CtbInputs[]',
+        'ctb_input_sum' => '\melmccann\cardanoexplorer\Model\InlineResponse200RightCoin',
+        'ctb_output_sum' => '\melmccann\cardanoexplorer\Model\InlineResponse200RightCoin',
+        'ctb_fees' => '\melmccann\cardanoexplorer\Model\InlineResponse200RightCoin'
     ];
 
     /**
@@ -331,7 +331,7 @@ class CTxBrief implements ModelInterface, ArrayAccess
     /**
      * Gets ctb_inputs
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2004CtbInputs[]
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse2004CtbInputs[]
      */
     public function getCtbInputs()
     {
@@ -341,7 +341,7 @@ class CTxBrief implements ModelInterface, ArrayAccess
     /**
      * Sets ctb_inputs
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2004CtbInputs[] $ctb_inputs ctb_inputs
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse2004CtbInputs[] $ctb_inputs ctb_inputs
      *
      * @return $this
      */
@@ -355,7 +355,7 @@ class CTxBrief implements ModelInterface, ArrayAccess
     /**
      * Gets ctb_outputs
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2004CtbInputs[]
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse2004CtbInputs[]
      */
     public function getCtbOutputs()
     {
@@ -365,7 +365,7 @@ class CTxBrief implements ModelInterface, ArrayAccess
     /**
      * Sets ctb_outputs
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2004CtbInputs[] $ctb_outputs ctb_outputs
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse2004CtbInputs[] $ctb_outputs ctb_outputs
      *
      * @return $this
      */
@@ -379,7 +379,7 @@ class CTxBrief implements ModelInterface, ArrayAccess
     /**
      * Gets ctb_input_sum
      *
-     * @return \OpenAPI\Client\Model\InlineResponse200RightCoin
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin
      */
     public function getCtbInputSum()
     {
@@ -389,7 +389,7 @@ class CTxBrief implements ModelInterface, ArrayAccess
     /**
      * Sets ctb_input_sum
      *
-     * @param \OpenAPI\Client\Model\InlineResponse200RightCoin $ctb_input_sum ctb_input_sum
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin $ctb_input_sum ctb_input_sum
      *
      * @return $this
      */
@@ -403,7 +403,7 @@ class CTxBrief implements ModelInterface, ArrayAccess
     /**
      * Gets ctb_output_sum
      *
-     * @return \OpenAPI\Client\Model\InlineResponse200RightCoin
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin
      */
     public function getCtbOutputSum()
     {
@@ -413,7 +413,7 @@ class CTxBrief implements ModelInterface, ArrayAccess
     /**
      * Sets ctb_output_sum
      *
-     * @param \OpenAPI\Client\Model\InlineResponse200RightCoin $ctb_output_sum ctb_output_sum
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin $ctb_output_sum ctb_output_sum
      *
      * @return $this
      */
@@ -427,7 +427,7 @@ class CTxBrief implements ModelInterface, ArrayAccess
     /**
      * Gets ctb_fees
      *
-     * @return \OpenAPI\Client\Model\InlineResponse200RightCoin
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin
      */
     public function getCtbFees()
     {
@@ -437,7 +437,7 @@ class CTxBrief implements ModelInterface, ArrayAccess
     /**
      * Sets ctb_fees
      *
-     * @param \OpenAPI\Client\Model\InlineResponse200RightCoin $ctb_fees ctb_fees
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin $ctb_fees ctb_fees
      *
      * @return $this
      */

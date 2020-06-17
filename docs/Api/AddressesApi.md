@@ -1,4 +1,4 @@
-# OpenAPI\Client\AddressesApi
+# melmccann\cardanoexplorer\AddressesApi
 
 All URIs are relative to *https://localhost*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 ## addressSummary
 
-> \OpenAPI\Client\Model\InlineResponse2008 addressSummary($address)
+> \melmccann\cardanoexplorer\Model\InlineResponse2008 addressSummary($address)
 
 get summary
 
@@ -24,7 +24,7 @@ Get summary information about an address
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\AddressesApi(
+$apiInstance = new melmccann\cardanoexplorer\Api\AddressesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2008**](../Model/InlineResponse2008.md)
+[**\melmccann\cardanoexplorer\Model\InlineResponse2008**](../Model/InlineResponse2008.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ No authorization required
 
 ## blockAddress
 
-> \OpenAPI\Client\Model\InlineResponse2008 blockAddress($address, $block_hash)
+> \melmccann\cardanoexplorer\Model\InlineResponse2008 blockAddress($address, $block_hash)
 
 get address
 
@@ -78,7 +78,7 @@ get address
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\AddressesApi(
+$apiInstance = new melmccann\cardanoexplorer\Api\AddressesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse2008**](../Model/InlineResponse2008.md)
+[**\melmccann\cardanoexplorer\Model\InlineResponse2008**](../Model/InlineResponse2008.md)
 
 ### Authorization
 

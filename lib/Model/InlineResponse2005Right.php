@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanoexplorer\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanoexplorer\ObjectSerializer;
 
 /**
  * InlineResponse2005Right Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -59,7 +59,7 @@ class InlineResponse2005Right implements ModelInterface, ArrayAccess
     protected static $openAPITypes = [
         'cte_id' => 'object',
         'cte_time_issued' => 'int',
-        'cte_amount' => '\OpenAPI\Client\Model\InlineResponse200RightCoin'
+        'cte_amount' => '\melmccann\cardanoexplorer\Model\InlineResponse200RightCoin'
     ];
 
     /**
@@ -273,7 +273,7 @@ class InlineResponse2005Right implements ModelInterface, ArrayAccess
     /**
      * Gets cte_amount
      *
-     * @return \OpenAPI\Client\Model\InlineResponse200RightCoin
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin
      */
     public function getCteAmount()
     {
@@ -283,7 +283,7 @@ class InlineResponse2005Right implements ModelInterface, ArrayAccess
     /**
      * Sets cte_amount
      *
-     * @param \OpenAPI\Client\Model\InlineResponse200RightCoin $cte_amount cte_amount
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin $cte_amount cte_amount
      *
      * @return $this
      */

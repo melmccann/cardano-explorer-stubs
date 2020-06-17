@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **cta_address** | **string** |  | 
-**cta_amount** | [**\OpenAPI\Client\Model\InlineResponse200RightCoin**](InlineResponse200RightCoin.md) |  | 
+**cta_amount** | [**\melmccann\cardanoexplorer\Model\InlineResponse200RightCoin**](InlineResponse200RightCoin.md) |  | 
 **cta_tx_hash** | [**object**](.md) |  | 
 **cta_tx_index** | **int** |  | 
 

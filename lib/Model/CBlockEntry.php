@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanoexplorer\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanoexplorer\ObjectSerializer;
 
 /**
  * CBlockEntry Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -63,10 +63,10 @@ class CBlockEntry implements ModelInterface, ArrayAccess
         'cbe_blk_hash' => 'string',
         'cbe_time_issued' => 'int',
         'cbe_tx_num' => 'int',
-        'cbe_total_sent' => '\OpenAPI\Client\Model\InlineResponse200RightCoin',
+        'cbe_total_sent' => '\melmccann\cardanoexplorer\Model\InlineResponse200RightCoin',
         'cbe_size' => 'int',
         'cbe_block_lead' => 'string',
-        'cbe_fees' => '\OpenAPI\Client\Model\InlineResponse200RightCoin'
+        'cbe_fees' => '\melmccann\cardanoexplorer\Model\InlineResponse200RightCoin'
     ];
 
     /**
@@ -510,7 +510,7 @@ class CBlockEntry implements ModelInterface, ArrayAccess
     /**
      * Gets cbe_total_sent
      *
-     * @return \OpenAPI\Client\Model\InlineResponse200RightCoin
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin
      */
     public function getCbeTotalSent()
     {
@@ -520,7 +520,7 @@ class CBlockEntry implements ModelInterface, ArrayAccess
     /**
      * Sets cbe_total_sent
      *
-     * @param \OpenAPI\Client\Model\InlineResponse200RightCoin $cbe_total_sent cbe_total_sent
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin $cbe_total_sent cbe_total_sent
      *
      * @return $this
      */
@@ -597,7 +597,7 @@ class CBlockEntry implements ModelInterface, ArrayAccess
     /**
      * Gets cbe_fees
      *
-     * @return \OpenAPI\Client\Model\InlineResponse200RightCoin
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin
      */
     public function getCbeFees()
     {
@@ -607,7 +607,7 @@ class CBlockEntry implements ModelInterface, ArrayAccess
     /**
      * Sets cbe_fees
      *
-     * @param \OpenAPI\Client\Model\InlineResponse200RightCoin $cbe_fees cbe_fees
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin $cbe_fees cbe_fees
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanoexplorer\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanoexplorer\ObjectSerializer;
 
 /**
  * CAddressBalance Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -60,7 +60,7 @@ class CAddressBalance implements ModelInterface, ArrayAccess
         'address' => 'string',
         'txid' => 'object',
         'index' => 'int',
-        'coin' => '\OpenAPI\Client\Model\InlineResponse200RightCoin'
+        'coin' => '\melmccann\cardanoexplorer\Model\InlineResponse200RightCoin'
     ];
 
     /**
@@ -325,7 +325,7 @@ class CAddressBalance implements ModelInterface, ArrayAccess
     /**
      * Gets coin
      *
-     * @return \OpenAPI\Client\Model\InlineResponse200RightCoin
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin
      */
     public function getCoin()
     {
@@ -335,7 +335,7 @@ class CAddressBalance implements ModelInterface, ArrayAccess
     /**
      * Sets coin
      *
-     * @param \OpenAPI\Client\Model\InlineResponse200RightCoin $coin coin
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin $coin coin
      *
      * @return $this
      */

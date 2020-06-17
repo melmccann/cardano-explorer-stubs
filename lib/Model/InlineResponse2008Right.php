@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanoexplorer\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanoexplorer\ObjectSerializer;
 
 /**
  * InlineResponse2008Right Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -59,13 +59,13 @@ class InlineResponse2008Right implements ModelInterface, ArrayAccess
     protected static $openAPITypes = [
         'ca_address' => 'string',
         'ca_type' => 'string',
-        'ca_chain_tip' => '\OpenAPI\Client\Model\InlineResponse2008RightCaChainTip',
+        'ca_chain_tip' => '\melmccann\cardanoexplorer\Model\InlineResponse2008RightCaChainTip',
         'ca_tx_num' => 'int',
-        'ca_balance' => '\OpenAPI\Client\Model\InlineResponse200RightCoin',
-        'ca_total_input' => '\OpenAPI\Client\Model\InlineResponse200RightCoin',
-        'ca_total_output' => '\OpenAPI\Client\Model\InlineResponse200RightCoin',
-        'ca_total_fee' => '\OpenAPI\Client\Model\InlineResponse200RightCoin',
-        'ca_tx_list' => '\OpenAPI\Client\Model\InlineResponse2004Right[]'
+        'ca_balance' => '\melmccann\cardanoexplorer\Model\InlineResponse200RightCoin',
+        'ca_total_input' => '\melmccann\cardanoexplorer\Model\InlineResponse200RightCoin',
+        'ca_total_output' => '\melmccann\cardanoexplorer\Model\InlineResponse200RightCoin',
+        'ca_total_fee' => '\melmccann\cardanoexplorer\Model\InlineResponse200RightCoin',
+        'ca_tx_list' => '\melmccann\cardanoexplorer\Model\InlineResponse2004Right[]'
     ];
 
     /**
@@ -366,7 +366,7 @@ class InlineResponse2008Right implements ModelInterface, ArrayAccess
     /**
      * Gets ca_chain_tip
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2008RightCaChainTip
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse2008RightCaChainTip
      */
     public function getCaChainTip()
     {
@@ -376,7 +376,7 @@ class InlineResponse2008Right implements ModelInterface, ArrayAccess
     /**
      * Sets ca_chain_tip
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2008RightCaChainTip $ca_chain_tip ca_chain_tip
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse2008RightCaChainTip $ca_chain_tip ca_chain_tip
      *
      * @return $this
      */
@@ -419,7 +419,7 @@ class InlineResponse2008Right implements ModelInterface, ArrayAccess
     /**
      * Gets ca_balance
      *
-     * @return \OpenAPI\Client\Model\InlineResponse200RightCoin
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin
      */
     public function getCaBalance()
     {
@@ -429,7 +429,7 @@ class InlineResponse2008Right implements ModelInterface, ArrayAccess
     /**
      * Sets ca_balance
      *
-     * @param \OpenAPI\Client\Model\InlineResponse200RightCoin $ca_balance ca_balance
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin $ca_balance ca_balance
      *
      * @return $this
      */
@@ -443,7 +443,7 @@ class InlineResponse2008Right implements ModelInterface, ArrayAccess
     /**
      * Gets ca_total_input
      *
-     * @return \OpenAPI\Client\Model\InlineResponse200RightCoin
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin
      */
     public function getCaTotalInput()
     {
@@ -453,7 +453,7 @@ class InlineResponse2008Right implements ModelInterface, ArrayAccess
     /**
      * Sets ca_total_input
      *
-     * @param \OpenAPI\Client\Model\InlineResponse200RightCoin $ca_total_input ca_total_input
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin $ca_total_input ca_total_input
      *
      * @return $this
      */
@@ -467,7 +467,7 @@ class InlineResponse2008Right implements ModelInterface, ArrayAccess
     /**
      * Gets ca_total_output
      *
-     * @return \OpenAPI\Client\Model\InlineResponse200RightCoin
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin
      */
     public function getCaTotalOutput()
     {
@@ -477,7 +477,7 @@ class InlineResponse2008Right implements ModelInterface, ArrayAccess
     /**
      * Sets ca_total_output
      *
-     * @param \OpenAPI\Client\Model\InlineResponse200RightCoin $ca_total_output ca_total_output
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin $ca_total_output ca_total_output
      *
      * @return $this
      */
@@ -491,7 +491,7 @@ class InlineResponse2008Right implements ModelInterface, ArrayAccess
     /**
      * Gets ca_total_fee
      *
-     * @return \OpenAPI\Client\Model\InlineResponse200RightCoin
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin
      */
     public function getCaTotalFee()
     {
@@ -501,7 +501,7 @@ class InlineResponse2008Right implements ModelInterface, ArrayAccess
     /**
      * Sets ca_total_fee
      *
-     * @param \OpenAPI\Client\Model\InlineResponse200RightCoin $ca_total_fee ca_total_fee
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin $ca_total_fee ca_total_fee
      *
      * @return $this
      */
@@ -515,7 +515,7 @@ class InlineResponse2008Right implements ModelInterface, ArrayAccess
     /**
      * Gets ca_tx_list
      *
-     * @return \OpenAPI\Client\Model\InlineResponse2004Right[]
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse2004Right[]
      */
     public function getCaTxList()
     {
@@ -525,7 +525,7 @@ class InlineResponse2008Right implements ModelInterface, ArrayAccess
     /**
      * Sets ca_tx_list
      *
-     * @param \OpenAPI\Client\Model\InlineResponse2004Right[] $ca_tx_list ca_tx_list
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse2004Right[] $ca_tx_list ca_tx_list
      *
      * @return $this
      */

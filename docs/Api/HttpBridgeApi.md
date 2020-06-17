@@ -1,4 +1,4 @@
-# OpenAPI\Client\HttpBridgeApi
+# melmccann\cardanoexplorer\HttpBridgeApi
 
 All URIs are relative to *https://localhost*
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## getAddressBalance
 
-> \OpenAPI\Client\Model\InlineResponse200 getAddressBalance($network, $address)
+> \melmccann\cardanoexplorer\Model\InlineResponse200 getAddressBalance($network, $address)
 
 address balance
 
@@ -23,7 +23,7 @@ Get current balance of provided address.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-$apiInstance = new OpenAPI\Client\Api\HttpBridgeApi(
+$apiInstance = new melmccann\cardanoexplorer\Api\HttpBridgeApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InlineResponse200**](../Model/InlineResponse200.md)
+[**\melmccann\cardanoexplorer\Model\InlineResponse200**](../Model/InlineResponse200.md)
 
 ### Authorization
 

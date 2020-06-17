@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace melmccann\cardanoexplorer\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \melmccann\cardanoexplorer\ObjectSerializer;
 
 /**
  * CTxAddressBrief Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  melmccann\cardanoexplorer
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -58,7 +58,7 @@ class CTxAddressBrief implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'cta_address' => 'string',
-        'cta_amount' => '\OpenAPI\Client\Model\InlineResponse200RightCoin',
+        'cta_amount' => '\melmccann\cardanoexplorer\Model\InlineResponse200RightCoin',
         'cta_tx_hash' => 'object',
         'cta_tx_index' => 'int'
     ];
@@ -265,7 +265,7 @@ class CTxAddressBrief implements ModelInterface, ArrayAccess
     /**
      * Gets cta_amount
      *
-     * @return \OpenAPI\Client\Model\InlineResponse200RightCoin
+     * @return \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin
      */
     public function getCtaAmount()
     {
@@ -275,7 +275,7 @@ class CTxAddressBrief implements ModelInterface, ArrayAccess
     /**
      * Sets cta_amount
      *
-     * @param \OpenAPI\Client\Model\InlineResponse200RightCoin $cta_amount cta_amount
+     * @param \melmccann\cardanoexplorer\Model\InlineResponse200RightCoin $cta_amount cta_amount
      *
      * @return $this
      */
