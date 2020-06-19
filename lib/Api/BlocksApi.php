@@ -38,6 +38,8 @@ use melmccann\cardanoexplorer\ApiException;
 use melmccann\cardanoexplorer\Configuration;
 use melmccann\cardanoexplorer\HeaderSelector;
 use melmccann\cardanoexplorer\ObjectSerializer;
+use \melmccann\cardanoexplorer\Model\InlineResponse2003;
+use \melmccann\cardanoexplorer\Model\InlineResponse2003Right;
 
 /**
  * BlocksApi Class Doc Comment
@@ -757,6 +759,13 @@ class BlocksApi
                     } else {
                         $content = (string) $responseBody;
                     }
+                    $inlineResponse2003 = new InlineResponse2003();
+                    $inlineResponse2003Right = new InlineResponse2003Right();
+                    $inlineResponse2003Right->setCbsEntry();
+                    $inlineResponse2003Right->setCbsMerkleRoot();
+                    $inlineResponse2003Right->setCbsNextHash();
+                    $inlineResponse2003Right->setCbsPrevHash();
+                    $inlineResponse2003->setRight();
 
                     return [
                         ObjectSerializer::deserialize($content, '\melmccann\cardanoexplorer\Model\InlineResponse2003', []),

@@ -38,6 +38,9 @@ use melmccann\cardanoexplorer\ApiException;
 use melmccann\cardanoexplorer\Configuration;
 use melmccann\cardanoexplorer\HeaderSelector;
 use melmccann\cardanoexplorer\ObjectSerializer;
+use JMS\Serializer\SerializerBuilder;
+use \melmccann\cardanoexplorer\Model\InlineResponse2005;
+use \melmccann\cardanoexplorer\Model\InlineResponse2005Right;
 
 /**
  * TransactionsApi Class Doc Comment
@@ -457,9 +460,16 @@ class TransactionsApi
                     } else {
                         $content = (string) $responseBody;
                     }
+                    // for the sake of verbosity :-D
+                    $jsonObject = \GuzzleHttp\json_decode($content);
+                    $responseContent = new InlineResponse2005();
+                    $responseContent->setRight(new InlineResponse2005Right());
+                    $responseContent->getRight()->setCteId($jsonObject->Right[0]->cteId);
+                    $responseContent->getRight()->setCteAmount($jsonObject->Right[0]->cteAmount);
+                    $responseContent->getRight()->setCteTimeIssued($jsonObject->Right[0]->cteTimeIssued);
 
                     return [
-                        ObjectSerializer::deserialize($content, '\melmccann\cardanoexplorer\Model\InlineResponse2005', []),
+                        $responseContent,
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
